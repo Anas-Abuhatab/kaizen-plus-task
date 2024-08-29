@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Cairo Variable" !important;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  box-sizing: border-box;
+}
+
+@import "custom";
+
+p {
+  margin-bottom: 0;
+}
+
+// variables
+
+:root {
+  --primary: #292929;
+  --text:#B2BAC9;
+}
+
+body{
+  margin: 0;
+  background-color: var(--primary);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+/* Firefox */
+* {
+  scrollbar-color: var(--primary2Dark) #f1f1f1;
+  scrollbar-width: thin;
+}
+
+.text-align-start{
+  text-align: start !important;
+}
+
+
+// Mobile style ###################################################################
+@media screen and (max-width:"576px") {
+  .fs-6{
+    font-size: calc(.5rem + .5vw ) !important;
+  }
+  .fs-5{
+    font-size: calc(.8rem + .5vw ) !important;
+  }
+  .fs-1{
+    font-size: calc(1.2rem + .5vw ) !important;
+  }
+  label{
+    white-space: nowrap;
+  }
+  input{
+    font-size: calc(.7rem + .6vw ) !important;
+  }
+  
+  p{
+    font-size: calc(.8rem + .1vw ) !important;
+  }
+  li{
+    text-align: start !important;
+  }
+
+}
+// Mobile style ###################################################################

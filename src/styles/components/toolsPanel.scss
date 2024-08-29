@@ -1,0 +1,28 @@
+.tools-panel {
+  margin-top: 55px;
+  margin-inline-start: 17px;
+  padding: 24px 12px;
+  background-color: #323232;
+  box-shadow: 0 12px 24px #00000033;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 12px;
+  gap: 10px;
+  color: var(--text);
+  width: 80px;
+  min-height: 883px;
+
+  &__btn {
+      text-transform: unset !important;
+      font-size: 0.7rem;
+      color: var(--text);
+      min-width: fit-content;
+      border-radius: 12px;
+      
+      & > p{
+        color: var(--text);
+    }
+  }
+}

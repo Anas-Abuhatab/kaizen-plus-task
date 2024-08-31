@@ -16,8 +16,7 @@ const MYRouter = () => {
     createRoutesFromElements(
       <>
         <Route path="/" element={<App />}>
-          <Route index element={<Navigate to="/home" replace />} />
-          <Route path="home" element={<DashBoard />} />
+          <Route index path="/" element={<DashBoard />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </>

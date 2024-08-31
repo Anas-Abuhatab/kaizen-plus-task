@@ -9,6 +9,7 @@ import {
 import App from "../App";
 
 const DashBoard = lazy(() => import("./DashBoard"));
+const Map = lazy(() => import("./Map"));
 const Error404 = lazy(() => import("./Error404"));
 
 const MYRouter = () => {
@@ -17,6 +18,7 @@ const MYRouter = () => {
       <>
         <Route path="/" element={<App />}>
           <Route index path="/" element={<DashBoard />} />
+          <Route index path="map" element={<Map />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </>

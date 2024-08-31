@@ -37,6 +37,7 @@ import {
   barData4,
   barOption,
 } from "@/mockDB";
+import TheMap from "../Map";
 
 ChartJS.register(
   CategoryScale,

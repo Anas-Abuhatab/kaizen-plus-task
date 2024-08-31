@@ -8,7 +8,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 const GeneralLayout = ({ children }) => {
   const mainRef = useRef(null);
   useEffect(() => {
-    const mainHeight = `calc(100vh - ${0 + 75}px)`;
+    const mainHeight = `calc(100vh - ${0 + 50}px)`;
     if (mainRef.current) {
       mainRef.current.style.minHeight = mainHeight;
     }

@@ -12,17 +12,36 @@
   gap: 10px;
   color: var(--text);
   width: 80px;
-  min-height: 883px;
+  min-height: fit-content;
+  
+  & img{
+    cursor: pointer;
+  }
 
   &__btn {
-      text-transform: unset !important;
-      font-size: 0.7rem;
+    text-transform: unset !important;
+    font-size: 0.7rem;
+    color: var(--text);
+    min-width: fit-content;
+    border-radius: 12px;
+    
+    & > p{
       color: var(--text);
-      min-width: fit-content;
-      border-radius: 12px;
-      
-      & > p{
-        color: var(--text);
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .tools-panel{
+    min-height: fit-content;
+    position: absolute;
+    z-index: 1000;
+    opacity: .5;
+    transition: all 2s  ;
+    
+    &:hover{
+      opacity: 1;
+      transition: none;
     }
   }
 }
